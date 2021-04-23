@@ -9,6 +9,9 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { DrawableDirective } from './drawable.directive';
 import Route1ComponentComponent  from './components/route1-component/route1-component.component';
 import NumbersComponent  from './components/numbers/numbers.component';
+import LoginComponent  from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
+import RegisterComponent from './components/register/register.component';
 
 
 @NgModule({
@@ -17,11 +20,14 @@ import NumbersComponent  from './components/numbers/numbers.component';
     DrawableDirective,
     Route1ComponentComponent,
     NumbersComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ChartsModule
+    ChartsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
